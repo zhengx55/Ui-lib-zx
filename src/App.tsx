@@ -4,13 +4,10 @@ function App() {
   return (
     <div className="App">
       <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>
-        Large
+        Large Primary
       </Button>
-      <Button btnType={ButtonType.Primary} size={ButtonSize.Small}>
-        Small
-      </Button>
-      <Button btnType={ButtonType.Danger} size={ButtonSize.Large}>
-        Danger
+      <Button btnType={ButtonType.Danger} size={ButtonSize.Small}>
+        Small Danger
       </Button>
       <Button
         btnType={ButtonType.Link}
@@ -19,8 +16,8 @@ function App() {
       >
         Link
       </Button>
-      <Button btnType={ButtonType.Primary} size={ButtonSize.Small} disabled>
-        Disabled
+      <Button href="https://www.baidu.com" btnType={ButtonType.Link} disabled>
+        Disabled Link
       </Button>
     </div>
   );

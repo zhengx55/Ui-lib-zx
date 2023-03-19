@@ -21,6 +21,14 @@ interface BaseButtonProps {
   href?: string;
 }
 
+type NativeButtonProps = BaseButtonProps &
+  React.ButtonHTMLAttributes<HTMLElement>;
+
+type AnchorButtonProps = BaseButtonProps &
+  React.AnchorHTMLAttributes<HTMLElement>;
+
+export type ButtonProps = Partial<NativeButtonProps & AnchorButtonProps>;
+
 const Button: React.FC<BaseButtonProps> = (props) => {
   const { btnType, disabled, size, children, href } = props;
   const classes = classNames("btn", {
