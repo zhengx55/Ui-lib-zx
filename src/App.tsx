@@ -1,4 +1,6 @@
 import Button, { ButtonSize, ButtonType } from "./components/Button";
+import Menu from "./components/Menu";
+import Item from "./components/Menu/Item";
 
 function App() {
   return (
@@ -19,6 +21,11 @@ function App() {
       <Button href="https://www.baidu.com" btnType={ButtonType.Link} disabled>
         Disabled Link
       </Button>
+      <Menu defaultIndex={0}>
+        <Item index={0}>cool link</Item>
+        <Item index={1}>cool link2</Item>
+        <Item index={2}>cool link3</Item>
+      </Menu>
     </div>
   );
 }
