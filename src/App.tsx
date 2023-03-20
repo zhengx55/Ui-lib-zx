@@ -6,9 +6,6 @@ function App() {
       <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>
         Large Primary
       </Button>
-      <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>
-        Large Primary
-      </Button>
       <Button btnType={ButtonType.Danger} size={ButtonSize.Small}>
         Small Danger
       </Button>
