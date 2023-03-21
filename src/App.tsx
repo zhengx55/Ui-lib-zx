@@ -21,7 +21,7 @@ function App() {
       <Button href="https://www.baidu.com" btnType={ButtonType.Link} disabled>
         Disabled Link
       </Button>
-      <Menu defaultIndex={0}>
+      <Menu defaultIndex={0} mode="vertical">
         <Item index={0}>cool link</Item>
         <Item index={1}>cool link2</Item>
         <Item index={2}>cool link3</Item>
