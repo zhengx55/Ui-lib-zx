@@ -1,6 +1,7 @@
 import Button, { ButtonSize, ButtonType } from "./components/Button";
 import Menu from "./components/Menu";
 import Item from "./components/Menu/Item";
+import SubMenu from "./components/Menu/subMenu";
 
 function App() {
   return (
@@ -21,9 +22,22 @@ function App() {
       <Button href="https://www.baidu.com" btnType={ButtonType.Link} disabled>
         Disabled Link
       </Button>
-      <Menu defaultIndex={0} mode="vertical">
+      <Menu defaultIndex={"0"}>
+        <Item>cool link</Item>
+        <SubMenu title="dropdown">
+          <Item>cool link1-1</Item>
+          <Item>cool link1-2</Item>
+        </SubMenu>
+        <Item>cool link2</Item>
+        <Item>cool link3</Item>
+      </Menu>
+      <Menu defaultIndex={"1"} mode="vertical" defualtOpenSubMenus={['2']}>
         <Item>cool link</Item>
         <Item>cool link2</Item>
+        <SubMenu title="dropdown">
+          <Item>cool link1-1</Item>
+          <Item>cool link1-2</Item>
+        </SubMenu>
         <Item>cool link3</Item>
       </Menu>
     </div>
