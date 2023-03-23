@@ -22,9 +22,9 @@ function App() {
         Disabled Link
       </Button>
       <Menu defaultIndex={0} mode="vertical">
-        <Item index={0}>cool link</Item>
-        <Item index={1}>cool link2</Item>
-        <Item index={2}>cool link3</Item>
+        <Item>cool link</Item>
+        <Item>cool link2</Item>
+        <Item>cool link3</Item>
       </Menu>
     </div>
   );
