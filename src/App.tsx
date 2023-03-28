@@ -1,11 +1,16 @@
+import { library } from "@fortawesome/fontawesome-svg-core";
 import Button, { ButtonSize, ButtonType } from "./components/Button";
 import Menu from "./components/Menu";
 import Item from "./components/Menu/Item";
 import SubMenu from "./components/Menu/subMenu";
+import { faCoffee, fas } from "@fortawesome/free-solid-svg-icons";
+import Icon from "./components/Icon/Icon";
+library.add(fas);
 
 function App() {
   return (
     <div className="App">
+      <Icon theme="danger" icon={faCoffee} size="lg" />
       <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>
         Large Primary
       </Button>
@@ -31,7 +36,7 @@ function App() {
         <Item>cool link2</Item>
         <Item>cool link3</Item>
       </Menu>
-      <Menu defaultIndex={"1"} mode="vertical" defualtOpenSubMenus={['2']}>
+      <Menu defaultIndex={"1"} mode="vertical" defualtOpenSubMenus={["2"]}>
         <Item>cool link</Item>
         <Item>cool link2</Item>
         <SubMenu title="dropdown">
