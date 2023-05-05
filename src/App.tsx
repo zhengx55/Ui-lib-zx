@@ -10,7 +10,7 @@ library.add(fas);
 function App() {
   return (
     <div className="App">
-      <Icon theme="danger" icon={faCoffee} size="lg" />
+      <Icon theme="primary" icon={faCoffee} size="lg" />
       <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>
         Large Primary
       </Button>
